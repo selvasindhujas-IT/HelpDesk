@@ -1,0 +1,61 @@
+GENERAL NETWORK TROUBLESHOOTING GUIDE
+
+CATEGORY: Network
+
+OVERVIEW
+This guide covers general local area network (LAN) issues, including
+IP address conflicts, shared folder access problems, and Ethernet issues,
+that are broader than just Wi-Fi.
+
+PROBLEM: IP ADDRESS CONFLICT
+Possible Causes:
+1. Two devices assigned the same static IP address.
+2. DHCP lease issue on the router.
+
+Solutions:
+1. Set the affected devices to obtain an IP address automatically (DHCP).
+2. Release and renew the IP address: "ipconfig /release" then
+   "ipconfig /renew".
+3. Restart the router to refresh the DHCP lease table.
+
+PROBLEM: CANNOT ACCESS SHARED FOLDERS/DEVICES ON NETWORK
+Possible Causes:
+1. Network discovery is turned off.
+2. Devices are on different network profiles (Public vs Private).
+3. Firewall blocking file sharing.
+
+Solutions:
+1. Enable "Network Discovery" and "File and Printer Sharing" in
+   Network and Sharing Center.
+2. Set the network profile to "Private" instead of "Public".
+3. Check Windows Firewall rules for File and Printer Sharing exceptions.
+4. Ensure both devices are on the same workgroup/network.
+
+PROBLEM: ETHERNET CONNECTION NOT WORKING
+Possible Causes:
+1. Faulty or loose Ethernet cable.
+2. Disabled network adapter.
+3. Incorrect IP configuration.
+4. Faulty switch/router port.
+
+Solutions:
+1. Check the cable is firmly connected at both ends; try a different cable.
+2. Ensure the Ethernet adapter is enabled in Network Connections.
+3. Try a different port on the router or switch.
+4. Run "ipconfig /all" to verify a valid IP address was assigned.
+
+PROBLEM: SLOW LOCAL NETWORK TRANSFER SPEEDS
+Possible Causes:
+1. Old network hardware (100 Mbps instead of Gigabit).
+2. Network congestion from many devices.
+3. Faulty cable causing speed negotiation issues.
+
+Solutions:
+1. Use Gigabit-rated Ethernet cables (Cat5e or higher) and switches.
+2. Reduce simultaneous heavy network usage (large transfers, streaming).
+3. Update network adapter drivers.
+
+RECOMMENDED FINAL SOLUTION
+Most general network issues are resolved by verifying physical connections,
+correcting IP configuration, and ensuring devices are on the same network
+profile.

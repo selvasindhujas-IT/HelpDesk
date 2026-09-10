@@ -1,0 +1,59 @@
+SOFTWARE / APPLICATION TROUBLESHOOTING GUIDE
+
+CATEGORY: Software
+
+OVERVIEW
+This guide addresses applications that fail to open, crash unexpectedly,
+run slowly, or fail to install/uninstall correctly.
+
+PROBLEM: APPLICATION NOT OPENING
+Possible Causes:
+1. Corrupted application installation.
+2. Missing dependency (e.g., .NET Framework, Visual C++ Redistributable).
+3. Incompatible application version with the OS.
+4. Conflicting background process.
+
+Basic Troubleshooting:
+1. Restart the computer and try opening the application again.
+2. Right-click the application and select "Run as Administrator".
+3. Check Task Manager for a hung background process with the same name and
+   end that process, then retry.
+4. Reinstall the application.
+
+Advanced Troubleshooting:
+1. Check Windows Event Viewer for application error logs.
+2. Install/repair required dependencies such as .NET Framework or
+   Visual C++ Redistributables.
+3. Run the application in Compatibility Mode for an older Windows version.
+4. Update the application to the latest version from the official source.
+
+PROBLEM: APPLICATION CRASHES FREQUENTLY
+Possible Causes:
+1. Corrupted application files.
+2. Outdated graphics or system drivers.
+3. Conflicting third-party plugins/extensions.
+4. Insufficient system resources (RAM/CPU).
+
+Solutions:
+1. Update the application to the latest version.
+2. Update graphics drivers, especially for graphics-intensive applications.
+3. Disable third-party plugins or add-ons one at a time to isolate the cause.
+4. Check available RAM and close other resource-heavy applications.
+
+PROBLEM: APPLICATION INSTALL/UNINSTALL FAILS
+Possible Causes:
+1. Insufficient permissions.
+2. Corrupted installer file.
+3. Leftover files from a previous installation.
+4. Antivirus blocking the installer.
+
+Solutions:
+1. Run the installer as Administrator.
+2. Re-download the installer in case the file is corrupted.
+3. Use the Microsoft Program Install and Uninstall Troubleshooter for stuck
+   entries.
+4. Temporarily disable antivirus during installation, then re-enable it.
+
+RECOMMENDED FINAL SOLUTION
+Reinstalling the application after ensuring all dependencies are present
+resolves the majority of application-level issues.

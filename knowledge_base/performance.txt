@@ -1,0 +1,69 @@
+COMPUTER PERFORMANCE TROUBLESHOOTING GUIDE
+
+CATEGORY: Performance
+
+OVERVIEW
+This guide addresses slow computer performance, high CPU/memory usage, low
+disk space, and long boot times.
+
+PROBLEM: COMPUTER RUNNING VERY SLOW
+Possible Causes:
+1. High CPU usage from too many running processes.
+2. High memory (RAM) usage.
+3. Too many background/startup applications.
+4. Low disk space on the system drive.
+5. Malware or unwanted background processes.
+6. Outdated hardware for current workload.
+
+Basic Troubleshooting:
+1. Open Task Manager (Ctrl+Shift+Esc) and check CPU and Memory usage.
+2. Close unnecessary open applications and browser tabs.
+3. Restart the computer to clear temporary memory buildup.
+4. Check available disk space; keep at least 15-20% free on the system drive.
+
+Advanced Troubleshooting:
+1. Disable unnecessary startup programs via Task Manager > Startup tab.
+2. Run Disk Cleanup to remove temporary files.
+3. Run a full antivirus/anti-malware scan to rule out malicious processes.
+4. Check for and install pending Windows updates and driver updates.
+5. Consider a RAM upgrade or switching to an SSD if using a traditional HDD.
+
+PROBLEM: HIGH CPU USAGE
+Possible Causes:
+1. A specific application or process consuming excessive CPU.
+2. Background Windows Update or antivirus scan running.
+3. Malware performing background operations.
+
+Solutions:
+1. Sort Task Manager processes by CPU usage to identify the top consumer.
+2. End unnecessary or unresponsive processes.
+3. Update or reinstall the application causing high CPU usage.
+4. Scan for malware if the cause is unclear.
+
+PROBLEM: HIGH MEMORY (RAM) USAGE
+Possible Causes:
+1. Too many applications or browser tabs open simultaneously.
+2. Memory leak in a specific application.
+3. Insufficient RAM for the workload.
+
+Solutions:
+1. Close unused applications and browser tabs.
+2. Restart applications suspected of having memory leaks.
+3. Add more RAM if usage consistently exceeds 85-90%.
+
+PROBLEM: LOW DISK SPACE
+Possible Causes:
+1. Accumulated temporary files and cache.
+2. Large unused files, downloads, or old backups.
+3. Too many installed applications.
+
+Solutions:
+1. Run Disk Cleanup (search "Disk Cleanup" in the Start Menu).
+2. Uninstall unused applications via Settings > Apps.
+3. Move large files (videos, backups) to external storage or the cloud.
+4. Empty the Recycle Bin regularly.
+
+RECOMMENDED FINAL SOLUTION
+Identify the top resource-consuming process using Task Manager, close or
+update it, and ensure adequate free disk space and background app cleanup for
+sustained performance improvement.

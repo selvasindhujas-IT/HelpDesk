@@ -1,0 +1,63 @@
+INTERNET CONNECTIVITY TROUBLESHOOTING GUIDE
+
+CATEGORY: Internet
+
+OVERVIEW
+Internet connectivity problems can occur even when the local network (Wi-Fi
+or Ethernet) appears to be working. This guide covers general internet
+outages, slow browsing speed, and intermittent internet loss.
+
+PROBLEM: NO INTERNET ACCESS
+Possible Causes:
+1. ISP-side outage.
+2. Modem or router requires a restart.
+3. Cable connection loose (for wired connections).
+4. Account or billing issue with the ISP.
+5. Firewall or antivirus blocking network traffic.
+
+Basic Troubleshooting:
+1. Check the modem and router lights - a solid green light usually means
+   the connection is active; a red or blinking orange light suggests a
+   problem.
+2. Restart the modem and router (power cycle) by unplugging for 30 seconds.
+3. Try connecting a different device to see if the issue is device-specific.
+4. Check the ISP's outage map or contact their support line.
+
+PROBLEM: SLOW INTERNET SPEED
+Possible Causes:
+1. Too many devices consuming bandwidth simultaneously.
+2. Background downloads or updates running.
+3. Outdated router hardware.
+4. Distance from the router or physical obstructions.
+5. ISP throttling during peak hours.
+
+Solutions:
+1. Run a speed test to measure actual upload/download speed.
+2. Close background applications that use bandwidth (cloud sync, streaming).
+3. Connect via Ethernet cable for a more stable and faster connection.
+4. Restart the router to clear temporary congestion.
+5. Contact ISP if speeds are consistently below the plan's promised speed.
+
+PROBLEM: INTERMITTENT INTERNET DROPS
+Possible Causes:
+1. Overheating router.
+2. Firmware bugs.
+3. Interference from nearby electronics.
+4. ISP line instability.
+
+Solutions:
+1. Ensure the router is in a well-ventilated area, not covered or enclosed.
+2. Update router firmware.
+3. Reduce the number of connected devices and see if drops continue.
+4. Log the times of the drops and share them with the ISP for investigation.
+
+DIAGNOSTIC TIPS
+Use "ping 8.8.8.8" to check basic internet reachability using Google's public
+DNS server IP. If ping fails completely, the issue is likely with the ISP or
+router. If ping succeeds but websites do not load, the issue is likely DNS
+related.
+
+RECOMMENDED FINAL SOLUTION
+Restart networking equipment first. If the problem persists across multiple
+devices, it is most likely an ISP-side issue and should be reported to the
+provider with specific error details.

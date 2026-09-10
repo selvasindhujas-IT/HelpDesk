@@ -1,0 +1,66 @@
+PRINTER TROUBLESHOOTING GUIDE
+
+CATEGORY: Printer
+
+OVERVIEW
+Printer issues typically involve the printer not being detected, print jobs
+stuck in the queue, poor print quality, or the printer being offline.
+
+PROBLEM: PRINTER NOT PRINTING
+Possible Causes:
+1. Printer is offline or not set as the default printer.
+2. Print spooler service has crashed.
+3. Out of paper or ink/toner.
+4. Loose or faulty USB/network connection.
+5. Outdated or corrupted printer driver.
+
+Basic Troubleshooting:
+1. Check that the printer is powered on and connected (USB or Wi-Fi).
+2. Confirm the printer is set as the default printer in Settings > Printers.
+3. Check for paper jams, empty paper tray, or low ink/toner.
+4. Cancel any stuck print jobs and try printing again.
+
+Advanced Troubleshooting:
+1. Restart the Print Spooler service via services.msc.
+2. Remove and re-add the printer in Windows Settings.
+3. Update or reinstall the printer driver from the manufacturer's website.
+4. Run the Windows "Printer Troubleshooter".
+
+PROBLEM: PRINTER SHOWS OFFLINE
+Possible Causes:
+1. Printer lost network connection.
+2. Windows cached an old printer status.
+3. IP address of a network printer has changed.
+
+Solutions:
+1. Right-click the printer icon and select "Use Printer Online".
+2. Restart both the printer and the computer.
+3. For network printers, verify the printer's IP address has not changed.
+4. Reinstall the printer using the correct current IP address or hostname.
+
+PROBLEM: POOR PRINT QUALITY
+Possible Causes:
+1. Low ink or toner levels.
+2. Clogged print heads (inkjet printers).
+3. Incorrect paper type settings.
+
+Solutions:
+1. Run the built-in printer head cleaning utility.
+2. Replace low or empty ink/toner cartridges.
+3. Check print quality settings match the paper type being used.
+
+PROBLEM: PRINT JOBS STUCK IN QUEUE
+Possible Causes:
+1. Corrupted print job.
+2. Print spooler service stuck.
+
+Solutions:
+1. Open the print queue and cancel all pending jobs.
+2. Restart the Print Spooler service.
+3. Delete temporary files in the spool folder
+   (C:\Windows\System32\spool\PRINTERS) after stopping the spooler service.
+4. Restart the spooler service and try printing a test page.
+
+RECOMMENDED FINAL SOLUTION
+Restarting the print spooler service and reinstalling the printer driver
+resolves the majority of printer issues.

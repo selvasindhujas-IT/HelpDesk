@@ -1,0 +1,81 @@
+WI-FI TROUBLESHOOTING GUIDE
+
+CATEGORY: Wi-Fi
+
+OVERVIEW
+Wi-Fi problems are among the most common IT support issues. They usually fall
+into four groups: Wi-Fi not connecting at all, Wi-Fi connected but no internet
+access, Wi-Fi disconnecting frequently, and no Wi-Fi networks being detected.
+
+PROBLEM: WI-FI NOT CONNECTING
+Possible Causes:
+1. Wrong Wi-Fi password entered.
+2. Wi-Fi adapter is disabled.
+3. Router is powered off or restarting.
+4. Airplane mode is turned on.
+5. Outdated or corrupted network driver.
+
+Basic Troubleshooting:
+1. Confirm Wi-Fi is switched on and Airplane Mode is off.
+2. Re-enter the Wi-Fi password carefully.
+3. Restart the laptop or phone.
+4. Restart the router by unplugging it for 30 seconds.
+5. Forget the network and reconnect.
+
+Advanced Troubleshooting:
+1. Update the Wi-Fi adapter driver from Device Manager.
+2. Run the built-in Windows Network Troubleshooter.
+3. Reset network settings using: netsh winsock reset (run as administrator).
+4. Check router firmware for updates.
+
+PROBLEM: WI-FI CONNECTED BUT NO INTERNET
+Possible Causes:
+1. ISP outage or maintenance in the area.
+2. Router has no internet from the modem.
+3. IP address conflict or bad DHCP lease.
+4. DNS server not responding.
+5. Too many devices connected to the router.
+
+Basic Troubleshooting:
+1. Check whether other devices on the same network also have no internet.
+2. Restart the router and modem.
+3. Disconnect and reconnect to the Wi-Fi network.
+4. Try opening a different website to rule out a single-site outage.
+
+Advanced Troubleshooting:
+1. Release and renew the IP address (ipconfig /release then ipconfig /renew).
+2. Flush the DNS cache (ipconfig /flushdns).
+3. Change the DNS server to a public DNS such as 8.8.8.8 or 1.1.1.1.
+4. Contact the Internet Service Provider if the outage is confirmed on their side.
+
+PROBLEM: WI-FI DISCONNECTING FREQUENTLY
+Possible Causes:
+1. Weak signal strength or long distance from the router.
+2. Interference from other electronic devices.
+3. Power-saving settings turning off the Wi-Fi adapter.
+4. Outdated router firmware.
+
+Solutions:
+1. Move closer to the router or use a Wi-Fi extender.
+2. Disable the "Allow the computer to turn off this device to save power"
+   option in the network adapter's power management settings.
+3. Change the Wi-Fi channel on the router to avoid interference.
+4. Update router firmware to the latest stable version.
+
+PROBLEM: NO WI-FI NETWORKS DETECTED
+Possible Causes:
+1. Wi-Fi adapter driver is missing or corrupted.
+2. Wi-Fi hardware switch is turned off.
+3. Adapter is disabled in Device Manager.
+
+Solutions:
+1. Enable the Wi-Fi adapter from Network Settings.
+2. Reinstall or update the network adapter driver.
+3. Check for a physical Wi-Fi switch or function key (Fn + Wi-Fi icon).
+4. Restart the computer after updating drivers.
+
+RECOMMENDED FINAL SOLUTION
+Most Wi-Fi issues are solved by restarting the router and device, forgetting
+and reconnecting to the network, and confirming the ISP connection is active.
+If the issue is isolated to one device, updating the network driver usually
+resolves it.

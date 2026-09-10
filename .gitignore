@@ -1,0 +1,30 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Streamlit
+.streamlit/
+
+# Data / generated artifacts
+data/helpdesk.db
+data/vector_store/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,55 @@
+BLUETOOTH TROUBLESHOOTING GUIDE
+
+CATEGORY: Bluetooth
+
+OVERVIEW
+Bluetooth issues generally fall into pairing failures, connection drops, and
+devices not being discoverable.
+
+PROBLEM: BLUETOOTH DEVICE WON'T PAIR
+Possible Causes:
+1. Bluetooth is turned off on one or both devices.
+2. Device is already paired with another device.
+3. Device is not in pairing/discoverable mode.
+4. Outdated Bluetooth driver.
+
+Basic Troubleshooting:
+1. Ensure Bluetooth is enabled on both the computer and the target device.
+2. Put the target device into pairing mode (usually a button press-and-hold).
+3. Remove the device from the paired devices list and pair again from scratch.
+4. Move the devices closer together (within 1-2 meters).
+
+Advanced Troubleshooting:
+1. Update the Bluetooth driver via Device Manager.
+2. Restart the Bluetooth Support Service via services.msc.
+3. Run the Windows Bluetooth Troubleshooter.
+4. Check for Windows updates that may include Bluetooth stack fixes.
+
+PROBLEM: BLUETOOTH KEEPS DISCONNECTING
+Possible Causes:
+1. Low battery on the Bluetooth device.
+2. Interference from Wi-Fi or other 2.4GHz devices.
+3. Power management settings turning off the Bluetooth adapter.
+
+Solutions:
+1. Charge or replace the batteries in the Bluetooth device.
+2. Disable "Allow the computer to turn off this device to save power" for
+   the Bluetooth adapter in Device Manager.
+3. Move away from other wireless devices causing interference.
+4. Update the Bluetooth driver to the latest version.
+
+PROBLEM: BLUETOOTH NOT DISCOVERABLE / MISSING FROM SETTINGS
+Possible Causes:
+1. Bluetooth adapter disabled in Device Manager.
+2. Missing or corrupted Bluetooth driver.
+3. Airplane mode enabled.
+
+Solutions:
+1. Turn off Airplane Mode.
+2. Enable the Bluetooth adapter in Device Manager if disabled.
+3. Reinstall the Bluetooth driver from the manufacturer's website.
+4. Restart the computer after driver installation.
+
+RECOMMENDED FINAL SOLUTION
+Removing and re-pairing the device, along with updating the Bluetooth driver,
+resolves most Bluetooth connectivity problems.

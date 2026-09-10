@@ -1,0 +1,71 @@
+WINDOWS OPERATING SYSTEM TROUBLESHOOTING GUIDE
+
+CATEGORY: Windows
+
+OVERVIEW
+This guide covers common Windows operating system issues including boot
+problems, update failures, blue screen errors, and general system instability.
+
+PROBLEM: WINDOWS WON'T BOOT
+Possible Causes:
+1. Corrupted system files.
+2. Faulty recent update.
+3. Hardware failure (hard disk or RAM).
+4. Corrupted boot configuration.
+
+Basic Troubleshooting:
+1. Force restart the computer by holding the power button for 10 seconds.
+2. Boot into Safe Mode by interrupting the boot process 2-3 times.
+3. Use "Startup Repair" from the Windows Recovery Environment.
+4. Check for loose internal hardware connections if accessible.
+
+Advanced Troubleshooting:
+1. Run "sfc /scannow" from an elevated command prompt to repair system files.
+2. Run "DISM /Online /Cleanup-Image /RestoreHealth" to repair the Windows image.
+3. Roll back the most recent Windows update from Recovery Options.
+4. Test RAM using Windows Memory Diagnostic.
+
+PROBLEM: WINDOWS UPDATE FAILS
+Possible Causes:
+1. Corrupted Windows Update components.
+2. Insufficient disk space.
+3. Network interruption during download.
+4. Conflicting third-party antivirus software.
+
+Solutions:
+1. Run the built-in Windows Update Troubleshooter.
+2. Free up disk space (at least 10-20 GB recommended).
+3. Restart the Windows Update service via services.msc.
+4. Clear the Software Distribution folder and retry the update.
+5. Temporarily disable third-party antivirus and retry.
+
+PROBLEM: BLUE SCREEN OF DEATH (BSOD)
+Possible Causes:
+1. Faulty or incompatible device drivers.
+2. Hardware failure (RAM, hard disk, overheating).
+3. Corrupted system files.
+4. Incompatible software installation.
+
+Solutions:
+1. Note down the stop code shown on the blue screen (e.g., MEMORY_MANAGEMENT).
+2. Boot into Safe Mode and uninstall recently installed drivers or software.
+3. Update all device drivers, especially graphics and chipset drivers.
+4. Run a full disk check using "chkdsk /f /r".
+5. Check system temperature to rule out overheating.
+
+PROBLEM: GENERAL SYSTEM INSTABILITY / FREEZING
+Possible Causes:
+1. Too many startup programs.
+2. Malware infection.
+3. Outdated drivers.
+4. Insufficient RAM for current workload.
+
+Solutions:
+1. Disable unnecessary startup programs via Task Manager > Startup tab.
+2. Run a full antivirus / anti-malware scan.
+3. Update all drivers through Windows Update or manufacturer tools.
+4. Consider adding more RAM if usage is consistently above 85%.
+
+RECOMMENDED FINAL SOLUTION
+Keep Windows and drivers updated, run periodic system file checks, and avoid
+installing software from untrusted sources to minimize instability.

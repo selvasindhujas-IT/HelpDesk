@@ -1,0 +1,64 @@
+LOGIN / ACCOUNT ACCESS TROUBLESHOOTING GUIDE
+
+CATEGORY: Login
+
+OVERVIEW
+This guide covers Windows login problems, forgotten passwords, account
+lockouts, and login loops. It does NOT provide any way to bypass, crack, or
+recover another person's password - only the account owner's own legitimate
+recovery options are described.
+
+PROBLEM: FORGOT WINDOWS PASSWORD
+Possible Causes:
+1. User has genuinely forgotten their password.
+2. Recent password change not remembered.
+
+Solutions (Account Owner Only):
+1. Use the "Reset password" link on the Windows login screen if a security
+   question was set up.
+2. If using a Microsoft Account, reset the password online at
+   account.live.com/password/reset from another device.
+3. Use a previously created password reset disk/USB, if one exists.
+4. Contact the system administrator (in a workplace) to reset the account.
+
+PROBLEM: ACCOUNT LOCKED OUT AFTER MULTIPLE FAILED ATTEMPTS
+Possible Causes:
+1. Too many incorrect password attempts triggered a security lockout.
+2. Organizational policy lockout (in a domain/work environment).
+
+Solutions:
+1. Wait for the lockout timer to expire (varies by system policy).
+2. Contact the IT administrator to manually unlock the account.
+3. Verify Caps Lock / keyboard layout is not causing repeated incorrect entry.
+
+PROBLEM: STUCK IN A LOGIN LOOP (RETURNS TO LOGIN SCREEN)
+Possible Causes:
+1. Corrupted user profile.
+2. Faulty recent update.
+3. Corrupted system files.
+
+Solutions:
+1. Try logging in with a different user account, if available, to isolate
+   the issue to one profile.
+2. Boot into Safe Mode and check for corrupted profile issues.
+3. Run "sfc /scannow" to repair corrupted system files.
+4. Create a new local user profile and migrate data if the old profile is
+   confirmed corrupted.
+
+PROBLEM: TWO-FACTOR AUTHENTICATION (2FA) ISSUES
+Possible Causes:
+1. Lost access to the 2FA device (phone/authenticator app).
+2. Time sync issue causing authenticator codes to be rejected.
+
+Solutions:
+1. Use backup codes generated when 2FA was first set up.
+2. Ensure the device's date and time are set to automatic/correct.
+3. Use the account provider's official identity verification recovery process.
+
+RECOMMENDED FINAL SOLUTION
+Always use the account provider's official password reset and recovery
+mechanisms. Never attempt to bypass authentication using unofficial tools.
+
+SECURITY NOTE
+This assistant will never provide instructions to bypass, crack, or gain
+unauthorized access to an account that does not belong to the user.

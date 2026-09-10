@@ -1,0 +1,61 @@
+DNS TROUBLESHOOTING GUIDE
+
+CATEGORY: DNS
+
+OVERVIEW
+DNS (Domain Name System) translates website names like "google.com" into IP
+addresses. DNS problems often show up as "this site can't be reached" errors
+even when the internet connection itself is working.
+
+PROBLEM: WEBSITES DON'T LOAD BUT INTERNET IS CONNECTED
+Possible Causes:
+1. ISP's DNS server is down or slow.
+2. Corrupted local DNS cache.
+3. Incorrect DNS server configured manually.
+4. Router DNS settings misconfigured.
+
+Basic Troubleshooting:
+1. Try opening a website using its IP address directly to confirm it's a DNS
+   issue and not a general connectivity issue.
+2. Flush the local DNS cache: "ipconfig /flushdns".
+3. Restart the router.
+
+Advanced Troubleshooting:
+1. Change the DNS server to a public DNS provider:
+   - Google DNS: 8.8.8.8 and 8.8.4.4
+   - Cloudflare DNS: 1.1.1.1 and 1.0.0.1
+2. Set network adapter DNS manually via Network Settings > Adapter Options >
+   Properties > IPv4 > Use the following DNS server addresses.
+3. Restart the DNS Client service via services.msc.
+4. Check router firmware for DNS-related bugs and update if needed.
+
+PROBLEM: DNS SERVER NOT RESPONDING ERROR
+Possible Causes:
+1. Router or modem issue.
+2. ISP DNS outage.
+3. Network adapter driver issue.
+4. VPN or proxy misconfiguration.
+
+Solutions:
+1. Restart the router and modem.
+2. Switch to a public DNS server (8.8.8.8 or 1.1.1.1).
+3. Update or reinstall the network adapter driver.
+4. Disable any active VPN or proxy temporarily to test.
+5. Run "netsh int ip reset" and "netsh winsock reset" from an elevated
+   command prompt, then restart the computer.
+
+PROBLEM: SOME WEBSITES LOAD BUT OTHERS DON'T
+Possible Causes:
+1. DNS caching an outdated or blocked entry for specific domains.
+2. ISP-level content filtering or throttling.
+3. CDN or hosting-provider-specific outage (not a local issue).
+
+Solutions:
+1. Flush DNS cache and retry.
+2. Test the affected website using a public DNS server.
+3. Check if the website is down for everyone using a third-party
+   "is it down" checking service.
+
+RECOMMENDED FINAL SOLUTION
+Flushing the DNS cache and switching to a reliable public DNS server (such as
+8.8.8.8) resolves the vast majority of DNS-related browsing issues.
